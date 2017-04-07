@@ -56,6 +56,11 @@ public class DocumentFile implements DocumentWriteOperation {
 		return format != null ? h.withFormat(format) : h;
 	}
 
+	@Override
+	public String getTemporalDocumentURI() {
+		return null;
+	}
+
 	public void setFormat(Format format) {
 		this.format = format;
 	}
